@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS z-index Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute; /* Positioning type: absolute */
+        top: 50px;
+        left: 50px;
+        z-index: 1; /* z-index value */
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute; /* Positioning type: absolute */
+        top: 100px;
+        left: 100px;
+        z-index: 2; /* Higher z-index value to place it above .box */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+</html>
